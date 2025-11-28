@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+    <org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+        <org.eventb.core.action name="'" org.eventb.core.assignment="Paquets ≔ ∅" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="Liens ≔ ∅" org.eventb.core.label="act2"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="Stock ≔ ∅" org.eventb.core.label="act3"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="EnTransit ≔ ∅" org.eventb.core.label="act4"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="PaquetsPasPerdus ≔ ∅" org.eventb.core.label="act5"/>
+        <org.eventb.core.action name="," org.eventb.core.assignment="PaquetsPerdus ≔ ∅" org.eventb.core.label="act6"/>
+    </org.eventb.core.event>
+    <org.eventb.core.seesContext name="(" org.eventb.core.target="c0"/>
+    <org.eventb.core.variable name=")" org.eventb.core.identifier="Paquets"/>
+    <org.eventb.core.invariant name="*" org.eventb.core.label="inv1" org.eventb.core.predicate="Paquets ⊆ PAQUETS"/>
+    <org.eventb.core.variable name="+" org.eventb.core.identifier="Liens"/>
+    <org.eventb.core.invariant name="," org.eventb.core.label="inv2" org.eventb.core.predicate="Liens ∈ ℙ(NOEUDS × NOEUDS)"/>
+    <org.eventb.core.invariant name="-" org.eventb.core.label="inv3" org.eventb.core.predicate="Liens ∩ id = ∅"/>
+    <org.eventb.core.event name="." org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="CreerPaquet">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="paquet"/>
+        <org.eventb.core.parameter name=")" org.eventb.core.identifier="noeud"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd1" org.eventb.core.predicate="paquet ∈ PAQUETS"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="Paquets ≔ Paquets ∪ {paquet}" org.eventb.core.label="act1"/>
+        <org.eventb.core.guard name="," org.eventb.core.label="grd2" org.eventb.core.predicate="noeud ∈ NOEUDS"/>
+        <org.eventb.core.action name="." org.eventb.core.assignment="PaquetsPasPerdus ≔ PaquetsPasPerdus ∪ {paquet}" org.eventb.core.label="act2"/>
+        <org.eventb.core.action name="-" org.eventb.core.assignment="Stock(paquet) ≔ noeud" org.eventb.core.label="act3"/>
+        <org.eventb.core.guard name="/" org.eventb.core.label="grd3" org.eventb.core.predicate="paquet ∉ Paquets"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="/" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="EnvoyerPaquet">
+        <org.eventb.core.action name="'" org.eventb.core.assignment="EnTransit(paquet) ≔ noeudReçoit" org.eventb.core.label="act1"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="paquet ∈ PaquetsPasPerdus"/>
+        <org.eventb.core.parameter name=")" org.eventb.core.identifier="paquet"/>
+        <org.eventb.core.parameter name="*" org.eventb.core.identifier="noeudEnvoi"/>
+        <org.eventb.core.parameter name="+" org.eventb.core.identifier="noeudReçoit"/>
+        <org.eventb.core.guard name="," org.eventb.core.label="grd2" org.eventb.core.predicate="noeudEnvoi ∈ NOEUDS"/>
+        <org.eventb.core.guard name="-" org.eventb.core.label="grd3" org.eventb.core.predicate="noeudReçoit ∈ NOEUDS"/>
+        <org.eventb.core.guard name="." org.eventb.core.label="grd4" org.eventb.core.predicate="noeudEnvoi ↦ noeudReçoit ∈ Liens"/>
+        <org.eventb.core.guard name="/" org.eventb.core.label="grd5" org.eventb.core.predicate="{paquet ↦ noeudEnvoi} ⊆ Stock"/>
+        <org.eventb.core.action name="0" org.eventb.core.assignment="Stock ≔ {paquet} ⩤ Stock" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="0" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="RecevoirPaquet">
+        <org.eventb.core.guard name="grd1" org.eventb.core.label="grd1" org.eventb.core.predicate="paquet ∈ PaquetsPasPerdus"/>
+        <org.eventb.core.guard name="grd3" org.eventb.core.label="grd2" org.eventb.core.predicate="noeudReçoit ∈ NOEUDS"/>
+        <org.eventb.core.guard name="grd6" org.eventb.core.label="grd3" org.eventb.core.predicate="noeudEnvoi ∈ NOEUDS"/>
+        <org.eventb.core.guard name="grd5" org.eventb.core.label="grd4" org.eventb.core.predicate="{paquet ↦ noeudReçoit} ⊆ EnTransit"/>
+        <org.eventb.core.parameter name="element1" org.eventb.core.identifier="paquet"/>
+        <org.eventb.core.parameter name="element3" org.eventb.core.identifier="noeudReçoit"/>
+        <org.eventb.core.action name="element4" org.eventb.core.assignment="EnTransit ≔ {paquet} ⩤ EnTransit" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="element5" org.eventb.core.assignment="Stock(paquet) ≔ noeudReçoit" org.eventb.core.label="act2"/>
+        <org.eventb.core.parameter name="element6" org.eventb.core.identifier="noeudEnvoi"/>
+        <org.eventb.core.guard name="element7" org.eventb.core.label="grd5" org.eventb.core.predicate="{noeudEnvoi ↦ noeudReçoit} ⊆ Liens"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="1" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="PertePaquet">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="paquet ∈ PaquetsPasPerdus"/>
+        <org.eventb.core.parameter name="(" org.eventb.core.identifier="paquet"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd2" org.eventb.core.predicate="paquet ∈ dom(EnTransit)"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="PaquetsPasPerdus ≔ PaquetsPasPerdus ∖ {paquet}" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="PaquetsPerdus ≔ PaquetsPerdus ∪ {paquet}" org.eventb.core.label="act2"/>
+        <org.eventb.core.action name="," org.eventb.core.assignment="EnTransit ≔ {paquet} ⩤ EnTransit" org.eventb.core.label="act3"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="2" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="CreerLien">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="noeud1"/>
+        <org.eventb.core.parameter name="(" org.eventb.core.identifier="noeud2"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="noeud1 ∈ NOEUDS"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="noeud2 ∈ NOEUDS"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="Liens ≔ Liens ∪ {noeud1 ↦ noeud2}" org.eventb.core.label="act1"/>
+        <org.eventb.core.guard name="," org.eventb.core.label="grd3" org.eventb.core.predicate="noeud1 ≠ noeud2"/>
+        <org.eventb.core.guard name="-" org.eventb.core.label="grd4" org.eventb.core.predicate="{noeud1 ↦ noeud2} ⊈ Liens"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="3" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="DetruireLien">
+        <org.eventb.core.parameter name="element2" org.eventb.core.identifier="noeud1"/>
+        <org.eventb.core.parameter name="element3" org.eventb.core.identifier="noeud2"/>
+        <org.eventb.core.guard name="grd1" org.eventb.core.label="grd1" org.eventb.core.predicate="noeud1 ∈ NOEUDS"/>
+        <org.eventb.core.guard name="grd2" org.eventb.core.label="grd2" org.eventb.core.predicate="noeud2 ∈ NOEUDS"/>
+        <org.eventb.core.guard name="element4" org.eventb.core.label="grd3" org.eventb.core.predicate="{noeud1 ↦ noeud2} ⊆ Liens"/>
+        <org.eventb.core.action name="element5" org.eventb.core.assignment="Liens ≔ Liens ∖ {noeud1 ↦ noeud2}" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.variable name="4" org.eventb.core.identifier="Stock"/>
+    <org.eventb.core.invariant name="9" org.eventb.core.label="inv4" org.eventb.core.predicate="PaquetsPerdus ⊆ Paquets"/>
+    <org.eventb.core.invariant name="=" org.eventb.core.label="inv5" org.eventb.core.predicate="PaquetsPasPerdus ⊆ Paquets"/>
+    <org.eventb.core.invariant name=":" org.eventb.core.label="inv6" org.eventb.core.predicate="PaquetsPasPerdus ∪ PaquetsPerdus = Paquets"/>
+    <org.eventb.core.invariant name="5" org.eventb.core.label="inv7" org.eventb.core.predicate="Stock ∈ PaquetsPasPerdus ⇸ NOEUDS"/>
+    <org.eventb.core.variable name="6" org.eventb.core.identifier="EnTransit"/>
+    <org.eventb.core.invariant name="7" org.eventb.core.label="inv8" org.eventb.core.predicate="EnTransit ∈ PaquetsPasPerdus ⇸ NOEUDS"/>
+    <org.eventb.core.variable name="8" org.eventb.core.identifier="PaquetsPerdus"/>
+    <org.eventb.core.variable name=";" org.eventb.core.identifier="PaquetsPasPerdus"/>
+    <org.eventb.core.invariant name="&gt;" org.eventb.core.label="inv9" org.eventb.core.predicate="dom(EnTransit) ∩ dom(Stock) = ∅"/>
+</org.eventb.core.machineFile>

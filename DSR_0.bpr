@@ -1,0 +1,1317 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.prFile version="1">
+    <org.eventb.core.prProof name="INITIALISATION/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="NOEUDS">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(NOEUDS×NOEUDS))∩(id ⦂ ℙ(NOEUDS×NOEUDS))=(∅ ⦂ ℙ(NOEUDS×NOEUDS))"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="PAQUETS">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(PAQUETS))⊆(∅ ⦂ ℙ(PAQUETS))"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="CreerPaquet/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10" org.eventb.core.prSets="NOEUDS,PAQUETS">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p12"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p13"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p14"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p15"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p10,p8,p5,p1,p2,p6,p9,p7,p3,p11">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="EnTransit" org.eventb.core.type="ℙ(PAQUETS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="Liens" org.eventb.core.type="ℙ(NOEUDS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="Paquets" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="PaquetsPasPerdus" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="PaquetsPerdus" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="Stock" org.eventb.core.type="ℙ(PAQUETS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="paquet" org.eventb.core.type="PAQUETS"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="PaquetsPasPerdus⊆Paquets"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="Liens∩(id ⦂ ℙ(NOEUDS×NOEUDS))=(∅ ⦂ ℙ(NOEUDS×NOEUDS))"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="PaquetsPasPerdus∪PaquetsPerdus=Paquets"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="EnTransit∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="finite(NOEUDS)"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="noeud∈NOEUDS">
+            <org.eventb.core.prIdent name="noeud" org.eventb.core.type="NOEUDS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="PaquetsPerdus⊆Paquets"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="dom(EnTransit)∩dom(Stock)=(∅ ⦂ ℙ(PAQUETS))"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="paquet∉Paquets"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="Paquets⊆PAQUETS"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="finite(PAQUETS)"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="Stock∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬paquet∈Paquets"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="paquet∈PAQUETS"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="Liens∈ℙ(NOEUDS × NOEUDS)"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="PaquetsPerdus⊆Paquets∪{paquet}"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="EnvoyerPaquet/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13" org.eventb.core.prSets="NOEUDS,PAQUETS">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p14"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p15"/>
+                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p16"/>
+                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p17"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="he with Stock(paquet)=noeudEnvoi" org.eventb.core.prHyps="p13">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p7" org.eventb.core.prInfHyps="p18"/>
+                        <org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p7"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p13"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p6,p10,p3,p8,p1,p4,p11,p5,p9,p7,p12,p2,p18">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="EnTransit" org.eventb.core.type="ℙ(PAQUETS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="Liens" org.eventb.core.type="ℙ(NOEUDS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="Paquets" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="PaquetsPasPerdus" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="PaquetsPerdus" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="Stock" org.eventb.core.type="ℙ(PAQUETS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="noeudEnvoi" org.eventb.core.type="NOEUDS"/>
+        <org.eventb.core.prIdent name="noeudReçoit" org.eventb.core.type="NOEUDS"/>
+        <org.eventb.core.prIdent name="paquet" org.eventb.core.type="PAQUETS"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="PaquetsPasPerdus⊆Paquets"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="Stock∈PAQUETS ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="Liens∩(id ⦂ ℙ(NOEUDS×NOEUDS))=(∅ ⦂ ℙ(NOEUDS×NOEUDS))"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="PaquetsPasPerdus∪PaquetsPerdus=Paquets"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="EnTransit∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="noeudReçoit∈NOEUDS"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="finite(NOEUDS)"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="noeudEnvoi∈NOEUDS"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="noeudEnvoi ↦ noeudReçoit∈Liens"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="PaquetsPerdus⊆Paquets"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="paquet∈Paquets"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="Stock(paquet) ↦ noeudReçoit∈Liens"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="Paquets⊆PAQUETS"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="finite(PAQUETS)"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="Stock∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="{paquet} ⩤ Stock∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="paquet∈dom(Stock)"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="Stock(paquet)=noeudEnvoi"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="Liens∈ℙ(NOEUDS × NOEUDS)"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.heL1:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="EnvoyerPaquet/grd5/WD" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="NOEUDS,PAQUETS">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p2"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p3"/>
+                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p4"/>
+                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p5"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6"/>
+                    <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p7">
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p7" org.eventb.core.prHyps="p1"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="PaquetsPasPerdus" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="Stock" org.eventb.core.type="ℙ(PAQUETS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="paquet" org.eventb.core.type="PAQUETS"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="Stock∈PAQUETS ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="Paquets⊆PAQUETS">
+            <org.eventb.core.prIdent name="Paquets" org.eventb.core.type="ℙ(PAQUETS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="paquet∈dom(Stock)∧Stock∈PAQUETS ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="Stock∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="noeudReçoit∈NOEUDS">
+            <org.eventb.core.prIdent name="noeudReçoit" org.eventb.core.type="NOEUDS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="noeudEnvoi∈NOEUDS">
+            <org.eventb.core.prIdent name="noeudEnvoi" org.eventb.core.type="NOEUDS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="paquet∈dom(Stock)"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="Liens∈ℙ(NOEUDS × NOEUDS)">
+            <org.eventb.core.prIdent name="Liens" org.eventb.core.type="ℙ(NOEUDS×NOEUDS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="PAQUETS">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(PAQUETS))⊆(∅ ⦂ ℙ(PAQUETS))"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="CreerPaquet/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10" org.eventb.core.prSets="NOEUDS,PAQUETS">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p12">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p13"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p14"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p15"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p16"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p12" org.eventb.core.prHyps="p10,p8,p5,p1,p2,p6,p9,p7,p3,p11">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="EnTransit" org.eventb.core.type="ℙ(PAQUETS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="Liens" org.eventb.core.type="ℙ(NOEUDS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="Paquets" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="PaquetsPasPerdus" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="PaquetsPerdus" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="Stock" org.eventb.core.type="ℙ(PAQUETS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="paquet" org.eventb.core.type="PAQUETS"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="PaquetsPasPerdus⊆Paquets"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="Liens∩(id ⦂ ℙ(NOEUDS×NOEUDS))=(∅ ⦂ ℙ(NOEUDS×NOEUDS))"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="PaquetsPasPerdus∪PaquetsPerdus=Paquets"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="EnTransit∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="PaquetsPasPerdus⊆Paquets∪{paquet}"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="finite(NOEUDS)"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="noeud∈NOEUDS">
+            <org.eventb.core.prIdent name="noeud" org.eventb.core.type="NOEUDS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="PaquetsPerdus⊆Paquets"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="dom(EnTransit)∩dom(Stock)=(∅ ⦂ ℙ(PAQUETS))"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="paquet∉Paquets"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="PaquetsPasPerdus∪{paquet}⊆Paquets∪{paquet}"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="Paquets⊆PAQUETS"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="finite(PAQUETS)"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="Stock∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬paquet∈Paquets"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="paquet∈PAQUETS"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="Liens∈ℙ(NOEUDS × NOEUDS)"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="EnvoyerPaquet/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13" org.eventb.core.prSets="NOEUDS,PAQUETS">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p14"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p15"/>
+                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p16"/>
+                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p17"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="he with Stock(paquet)=noeudEnvoi" org.eventb.core.prHyps="p13">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p7" org.eventb.core.prInfHyps="p18"/>
+                        <org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p7"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p13"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p6,p10,p3,p8,p1,p4,p11,p5,p9,p7,p12,p2,p18">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="EnTransit" org.eventb.core.type="ℙ(PAQUETS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="Liens" org.eventb.core.type="ℙ(NOEUDS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="Paquets" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="PaquetsPasPerdus" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="PaquetsPerdus" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="Stock" org.eventb.core.type="ℙ(PAQUETS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="noeudEnvoi" org.eventb.core.type="NOEUDS"/>
+        <org.eventb.core.prIdent name="noeudReçoit" org.eventb.core.type="NOEUDS"/>
+        <org.eventb.core.prIdent name="paquet" org.eventb.core.type="PAQUETS"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="PaquetsPasPerdus⊆Paquets"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="Stock∈PAQUETS ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="Liens∩(id ⦂ ℙ(NOEUDS×NOEUDS))=(∅ ⦂ ℙ(NOEUDS×NOEUDS))"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="PaquetsPasPerdus∪PaquetsPerdus=Paquets"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="EnTransit∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="noeudReçoit∈NOEUDS"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="finite(NOEUDS)"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="noeudEnvoi∈NOEUDS"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="noeudEnvoi ↦ noeudReçoit∈Liens"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="PaquetsPerdus⊆Paquets"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="paquet∈Paquets"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="Stock(paquet) ↦ noeudReçoit∈Liens"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="Paquets⊆PAQUETS"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="finite(PAQUETS)"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="Stock∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="EnTransit{paquet ↦ noeudReçoit}∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="paquet∈dom(Stock)"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="Stock(paquet)=noeudEnvoi"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="Liens∈ℙ(NOEUDS × NOEUDS)"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.heL1:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="RecevoirPaquet/grd5/WD" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="NOEUDS,PAQUETS">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p2"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p3"/>
+                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p4"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p5"/>
+                    <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p6">
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p6" org.eventb.core.prHyps="p1"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="EnTransit" org.eventb.core.type="ℙ(PAQUETS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="Paquets" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="paquet" org.eventb.core.type="PAQUETS"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="EnTransit∈PAQUETS ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="Paquets⊆PAQUETS"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="paquet∈dom(EnTransit)"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="noeudReçoit∈NOEUDS">
+            <org.eventb.core.prIdent name="noeudReçoit" org.eventb.core.type="NOEUDS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="EnTransit∈Paquets ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="paquet∈dom(EnTransit)∧EnTransit∈PAQUETS ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="Liens∈ℙ(NOEUDS × NOEUDS)">
+            <org.eventb.core.prIdent name="Liens" org.eventb.core.type="ℙ(NOEUDS×NOEUDS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="RecevoirPaquet/grd3/WD" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="NOEUDS,PAQUETS">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p2"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p3"/>
+                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p4"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p5"/>
+                    <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p6">
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p6" org.eventb.core.prHyps="p1"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="EnTransit" org.eventb.core.type="ℙ(PAQUETS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="PaquetsPasPerdus" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="paquet" org.eventb.core.type="PAQUETS"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="EnTransit∈PAQUETS ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="Paquets⊆PAQUETS">
+            <org.eventb.core.prIdent name="Paquets" org.eventb.core.type="ℙ(PAQUETS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="EnTransit∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="paquet∈dom(EnTransit)"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="noeudReçoit∈NOEUDS">
+            <org.eventb.core.prIdent name="noeudReçoit" org.eventb.core.type="NOEUDS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="paquet∈dom(EnTransit)∧EnTransit∈PAQUETS ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="Liens∈ℙ(NOEUDS × NOEUDS)">
+            <org.eventb.core.prIdent name="Liens" org.eventb.core.type="ℙ(NOEUDS×NOEUDS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="RecevoirPaquet/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12" org.eventb.core.prSets="NOEUDS,PAQUETS">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p13"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p14"/>
+                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p15"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="he with EnTransit(paquet)=noeudReçoit" org.eventb.core.prHyps="p12">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p12"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p11,p9,p5,p1,p2,p6,p10,p7,p4,p8,p3">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="EnTransit" org.eventb.core.type="ℙ(PAQUETS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="Liens" org.eventb.core.type="ℙ(NOEUDS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="Paquets" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="PaquetsPasPerdus" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="PaquetsPerdus" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="Stock" org.eventb.core.type="ℙ(PAQUETS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="noeudReçoit" org.eventb.core.type="NOEUDS"/>
+        <org.eventb.core.prIdent name="paquet" org.eventb.core.type="PAQUETS"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="PaquetsPasPerdus⊆Paquets"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="Liens∩(id ⦂ ℙ(NOEUDS×NOEUDS))=(∅ ⦂ ℙ(NOEUDS×NOEUDS))"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="PaquetsPasPerdus∪PaquetsPerdus=Paquets"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="EnTransit∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="paquet∈dom(EnTransit)"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="noeudReçoit∈NOEUDS"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="finite(NOEUDS)"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="EnTransit(paquet)=noeudReçoit"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="PaquetsPerdus⊆Paquets"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="{paquet} ⩤ EnTransit∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="EnTransit∈PAQUETS ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="paquet∈Paquets"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="Paquets⊆PAQUETS"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="finite(PAQUETS)"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="Stock∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="Liens∈ℙ(NOEUDS × NOEUDS)"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.heL1:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="RecevoirPaquet/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12" org.eventb.core.prSets="NOEUDS,PAQUETS">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p13"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p14"/>
+                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p15"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="he with EnTransit(paquet)=noeudReçoit" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p12">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p16">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p12"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p16" org.eventb.core.prHyps="p11,p9,p5,p1,p2,p6,p10,p7,p4,p8,p3">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="EnTransit" org.eventb.core.type="ℙ(PAQUETS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="Liens" org.eventb.core.type="ℙ(NOEUDS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="Paquets" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="PaquetsPasPerdus" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="PaquetsPerdus" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="Stock" org.eventb.core.type="ℙ(PAQUETS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="noeudReçoit" org.eventb.core.type="NOEUDS"/>
+        <org.eventb.core.prIdent name="paquet" org.eventb.core.type="PAQUETS"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="PaquetsPasPerdus⊆Paquets"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="Liens∩(id ⦂ ℙ(NOEUDS×NOEUDS))=(∅ ⦂ ℙ(NOEUDS×NOEUDS))"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="PaquetsPasPerdus∪PaquetsPerdus=Paquets"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="EnTransit∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="paquet∈dom(EnTransit)"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="noeudReçoit∈NOEUDS"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="finite(NOEUDS)"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="Stock{paquet ↦ EnTransit(paquet)}∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="Stock{paquet ↦ noeudReçoit}∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="EnTransit(paquet)=noeudReçoit"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="PaquetsPerdus⊆Paquets"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="EnTransit∈PAQUETS ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="paquet∈Paquets"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="Paquets⊆PAQUETS"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="finite(PAQUETS)"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="Stock∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="Liens∈ℙ(NOEUDS × NOEUDS)"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.heL1:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="NOEUDS,PAQUETS">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(PAQUETS×NOEUDS))∈(∅ ⦂ ℙ(PAQUETS)) ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="CreerPaquet/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10" org.eventb.core.prSets="NOEUDS,PAQUETS">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p12"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p13"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p14"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p15"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p10,p8,p5,p1,p2,p6,p9,p7,p3,p11">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="EnTransit" org.eventb.core.type="ℙ(PAQUETS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="Liens" org.eventb.core.type="ℙ(NOEUDS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="Paquets" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="PaquetsPasPerdus" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="PaquetsPerdus" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="Stock" org.eventb.core.type="ℙ(PAQUETS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="noeud" org.eventb.core.type="NOEUDS"/>
+        <org.eventb.core.prIdent name="paquet" org.eventb.core.type="PAQUETS"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="PaquetsPasPerdus⊆Paquets"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="Liens∩(id ⦂ ℙ(NOEUDS×NOEUDS))=(∅ ⦂ ℙ(NOEUDS×NOEUDS))"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="PaquetsPasPerdus∪PaquetsPerdus=Paquets"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="EnTransit∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="finite(NOEUDS)"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="noeud∈NOEUDS"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="PaquetsPerdus⊆Paquets"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="dom(EnTransit)∩dom(Stock)=(∅ ⦂ ℙ(PAQUETS))"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="paquet∉Paquets"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="Paquets⊆PAQUETS"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="Stock{paquet ↦ noeud}∈PaquetsPasPerdus∪{paquet} ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="finite(PAQUETS)"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="Stock∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬paquet∈Paquets"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="paquet∈PAQUETS"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="Liens∈ℙ(NOEUDS × NOEUDS)"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="PAQUETS">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(PAQUETS))∪(∅ ⦂ ℙ(PAQUETS))=(∅ ⦂ ℙ(PAQUETS))"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv8/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="NOEUDS,PAQUETS">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(PAQUETS×NOEUDS))∈(∅ ⦂ ℙ(PAQUETS)) ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="CreerPaquet/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10" org.eventb.core.prSets="NOEUDS,PAQUETS">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p12">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p13"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p14"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p15"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p16"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="he with PaquetsPasPerdus∪PaquetsPerdus=Paquets" org.eventb.core.prGoal="p12" org.eventb.core.prHyps="p6">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p18">
+                                <org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p11" org.eventb.core.prInfHyps="p17"/>
+                                <org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p11"/>
+                                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p6"/>
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p18" org.eventb.core.prHyps="p10,p8,p5,p1,p2,p9,p7,p3,p11,p17">
+                                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="EnTransit" org.eventb.core.type="ℙ(PAQUETS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="Liens" org.eventb.core.type="ℙ(NOEUDS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="Paquets" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="PaquetsPasPerdus" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="PaquetsPerdus" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="Stock" org.eventb.core.type="ℙ(PAQUETS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="paquet" org.eventb.core.type="PAQUETS"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="PaquetsPasPerdus⊆Paquets"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="Liens∩(id ⦂ ℙ(NOEUDS×NOEUDS))=(∅ ⦂ ℙ(NOEUDS×NOEUDS))"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="PaquetsPasPerdus∪PaquetsPerdus=Paquets"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="EnTransit∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="finite(NOEUDS)"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="noeud∈NOEUDS">
+            <org.eventb.core.prIdent name="noeud" org.eventb.core.type="NOEUDS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(PaquetsPasPerdus∪{paquet})∪PaquetsPerdus=Paquets∪{paquet}"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬paquet∈PaquetsPasPerdus∪PaquetsPerdus"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="PaquetsPerdus⊆Paquets"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="dom(EnTransit)∩dom(Stock)=(∅ ⦂ ℙ(PAQUETS))"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="paquet∉Paquets"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="PaquetsPasPerdus∪{paquet}∪PaquetsPerdus=Paquets∪{paquet}"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="Paquets⊆PAQUETS"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="finite(PAQUETS)"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="Stock∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬paquet∈Paquets"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="paquet∈PAQUETS"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="PaquetsPasPerdus∪{paquet}∪PaquetsPerdus=PaquetsPasPerdus∪PaquetsPerdus∪{paquet}"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="Liens∈ℙ(NOEUDS × NOEUDS)"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.heL1:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="CreerPaquet/inv8/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10" org.eventb.core.prSets="NOEUDS,PAQUETS">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p12"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p13"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p14"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p15"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p10,p8,p5,p1,p2,p6,p9,p7,p3,p11">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="EnTransit" org.eventb.core.type="ℙ(PAQUETS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="Liens" org.eventb.core.type="ℙ(NOEUDS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="Paquets" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="PaquetsPasPerdus" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="PaquetsPerdus" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="Stock" org.eventb.core.type="ℙ(PAQUETS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="paquet" org.eventb.core.type="PAQUETS"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="PaquetsPasPerdus⊆Paquets"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="Liens∩(id ⦂ ℙ(NOEUDS×NOEUDS))=(∅ ⦂ ℙ(NOEUDS×NOEUDS))"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="EnTransit∈PaquetsPasPerdus∪{paquet} ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="PaquetsPasPerdus∪PaquetsPerdus=Paquets"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="EnTransit∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="finite(NOEUDS)"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="noeud∈NOEUDS">
+            <org.eventb.core.prIdent name="noeud" org.eventb.core.type="NOEUDS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="PaquetsPerdus⊆Paquets"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="dom(EnTransit)∩dom(Stock)=(∅ ⦂ ℙ(PAQUETS))"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="paquet∉Paquets"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="Paquets⊆PAQUETS"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="finite(PAQUETS)"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="Stock∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬paquet∈Paquets"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="paquet∈PAQUETS"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="Liens∈ℙ(NOEUDS × NOEUDS)"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="EnvoyerPaquet/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12" org.eventb.core.prSets="NOEUDS,PAQUETS">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p12" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p13"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p14"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p15"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p16"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p17"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p10,p8,p5,p1,p2,p6,p9,p7,p3,p4,p11,p13">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="EnTransit" org.eventb.core.type="ℙ(PAQUETS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="Liens" org.eventb.core.type="ℙ(NOEUDS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="Paquets" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="PaquetsPasPerdus" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="PaquetsPerdus" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="Stock" org.eventb.core.type="ℙ(PAQUETS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="noeudEnvoi" org.eventb.core.type="NOEUDS"/>
+        <org.eventb.core.prIdent name="noeudReçoit" org.eventb.core.type="NOEUDS"/>
+        <org.eventb.core.prIdent name="paquet" org.eventb.core.type="PAQUETS"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="PaquetsPasPerdus⊆Paquets"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="paquet∈PaquetsPasPerdus"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="Liens∩(id ⦂ ℙ(NOEUDS×NOEUDS))=(∅ ⦂ ℙ(NOEUDS×NOEUDS))"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="PaquetsPasPerdus∪PaquetsPerdus=Paquets"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="EnTransit∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="noeudReçoit∈NOEUDS"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="finite(NOEUDS)"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="noeudEnvoi∈NOEUDS"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="noeudEnvoi ↦ noeudReçoit∈Liens"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="{paquet ↦ noeudEnvoi}⊆Stock"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="PaquetsPerdus⊆Paquets"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="dom(EnTransit)∩dom(Stock)=(∅ ⦂ ℙ(PAQUETS))"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="paquet ↦ noeudEnvoi∈Stock"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="Paquets⊆PAQUETS"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="finite(PAQUETS)"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="Stock∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="{paquet} ⩤ Stock∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="Liens∈ℙ(NOEUDS × NOEUDS)"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="EnvoyerPaquet/inv8/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12" org.eventb.core.prSets="NOEUDS,PAQUETS">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p12" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p13"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p14"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p15"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p16"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p17"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p10,p8,p5,p1,p2,p6,p9,p7,p3,p4,p11,p13">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="EnTransit" org.eventb.core.type="ℙ(PAQUETS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="Liens" org.eventb.core.type="ℙ(NOEUDS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="Paquets" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="PaquetsPasPerdus" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="PaquetsPerdus" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="Stock" org.eventb.core.type="ℙ(PAQUETS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="noeudEnvoi" org.eventb.core.type="NOEUDS"/>
+        <org.eventb.core.prIdent name="noeudReçoit" org.eventb.core.type="NOEUDS"/>
+        <org.eventb.core.prIdent name="paquet" org.eventb.core.type="PAQUETS"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="PaquetsPasPerdus⊆Paquets"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="paquet∈PaquetsPasPerdus"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="Liens∩(id ⦂ ℙ(NOEUDS×NOEUDS))=(∅ ⦂ ℙ(NOEUDS×NOEUDS))"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="PaquetsPasPerdus∪PaquetsPerdus=Paquets"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="EnTransit∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="noeudReçoit∈NOEUDS"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="finite(NOEUDS)"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="noeudEnvoi∈NOEUDS"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="noeudEnvoi ↦ noeudReçoit∈Liens"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="{paquet ↦ noeudEnvoi}⊆Stock"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="PaquetsPerdus⊆Paquets"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="dom(EnTransit)∩dom(Stock)=(∅ ⦂ ℙ(PAQUETS))"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="paquet ↦ noeudEnvoi∈Stock"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="Paquets⊆PAQUETS"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="finite(PAQUETS)"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="Stock∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="EnTransit{paquet ↦ noeudReçoit}∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="Liens∈ℙ(NOEUDS × NOEUDS)"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="RecevoirPaquet/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12" org.eventb.core.prSets="NOEUDS,PAQUETS">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p12" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p13"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p14"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p15"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p16"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p17"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p18"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p10,p8,p5,p1,p2,p6,p9,p7,p3,p4,p13,p14">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="EnTransit" org.eventb.core.type="ℙ(PAQUETS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="Liens" org.eventb.core.type="ℙ(NOEUDS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="Paquets" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="PaquetsPasPerdus" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="PaquetsPerdus" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="Stock" org.eventb.core.type="ℙ(PAQUETS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="noeudEnvoi" org.eventb.core.type="NOEUDS"/>
+        <org.eventb.core.prIdent name="noeudReçoit" org.eventb.core.type="NOEUDS"/>
+        <org.eventb.core.prIdent name="paquet" org.eventb.core.type="PAQUETS"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="PaquetsPasPerdus⊆Paquets"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="paquet∈PaquetsPasPerdus"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="Liens∩(id ⦂ ℙ(NOEUDS×NOEUDS))=(∅ ⦂ ℙ(NOEUDS×NOEUDS))"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="PaquetsPasPerdus∪PaquetsPerdus=Paquets"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="EnTransit∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="noeudReçoit∈NOEUDS"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="finite(NOEUDS)"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="noeudEnvoi∈NOEUDS"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="noeudEnvoi ↦ noeudReçoit∈Liens"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="paquet ↦ noeudReçoit∈EnTransit"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="Stock{paquet ↦ noeudReçoit}∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="{paquet ↦ noeudReçoit}⊆EnTransit"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="PaquetsPerdus⊆Paquets"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="dom(EnTransit)∩dom(Stock)=(∅ ⦂ ℙ(PAQUETS))"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="Paquets⊆PAQUETS"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="finite(PAQUETS)"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="Stock∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="Liens∈ℙ(NOEUDS × NOEUDS)"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="{noeudEnvoi ↦ noeudReçoit}⊆Liens"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="RecevoirPaquet/inv8/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12" org.eventb.core.prSets="NOEUDS,PAQUETS">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p12" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p13"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p14"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p15"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p16"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p17"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p18"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p10,p8,p5,p1,p2,p6,p9,p7,p3,p4,p13,p14">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="EnTransit" org.eventb.core.type="ℙ(PAQUETS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="Liens" org.eventb.core.type="ℙ(NOEUDS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="Paquets" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="PaquetsPasPerdus" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="PaquetsPerdus" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="Stock" org.eventb.core.type="ℙ(PAQUETS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="noeudEnvoi" org.eventb.core.type="NOEUDS"/>
+        <org.eventb.core.prIdent name="noeudReçoit" org.eventb.core.type="NOEUDS"/>
+        <org.eventb.core.prIdent name="paquet" org.eventb.core.type="PAQUETS"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="PaquetsPasPerdus⊆Paquets"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="paquet∈PaquetsPasPerdus"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="Liens∩(id ⦂ ℙ(NOEUDS×NOEUDS))=(∅ ⦂ ℙ(NOEUDS×NOEUDS))"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="PaquetsPasPerdus∪PaquetsPerdus=Paquets"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="EnTransit∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="noeudReçoit∈NOEUDS"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="finite(NOEUDS)"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="noeudEnvoi∈NOEUDS"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="noeudEnvoi ↦ noeudReçoit∈Liens"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="paquet ↦ noeudReçoit∈EnTransit"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="{paquet ↦ noeudReçoit}⊆EnTransit"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="PaquetsPerdus⊆Paquets"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="dom(EnTransit)∩dom(Stock)=(∅ ⦂ ℙ(PAQUETS))"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="{paquet} ⩤ EnTransit∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="Paquets⊆PAQUETS"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="finite(PAQUETS)"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="Stock∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="Liens∈ℙ(NOEUDS × NOEUDS)"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="{noeudEnvoi ↦ noeudReçoit}⊆Liens"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="PertePaquet/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11" org.eventb.core.prSets="NOEUDS,PAQUETS">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p12"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p13"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p11,p9,p5,p1,p2,p6,p10,p7,p3,p4,p8">
+                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="EnTransit" org.eventb.core.type="ℙ(PAQUETS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="Liens" org.eventb.core.type="ℙ(NOEUDS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="Paquets" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="PaquetsPasPerdus" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="PaquetsPerdus" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="Stock" org.eventb.core.type="ℙ(PAQUETS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="paquet" org.eventb.core.type="PAQUETS"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="PaquetsPasPerdus⊆Paquets"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="paquet∈PaquetsPasPerdus"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="Liens∩(id ⦂ ℙ(NOEUDS×NOEUDS))=(∅ ⦂ ℙ(NOEUDS×NOEUDS))"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="PaquetsPasPerdus∪PaquetsPerdus=Paquets"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="EnTransit∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="paquet∈dom(EnTransit)"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="finite(NOEUDS)"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="PaquetsPerdus⊆Paquets"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="dom(EnTransit)∩dom(Stock)=(∅ ⦂ ℙ(PAQUETS))"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="Paquets⊆PAQUETS"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="PaquetsPasPerdus ∖ {paquet}⊆Paquets"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="finite(PAQUETS)"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="Stock∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="Liens∈ℙ(NOEUDS × NOEUDS)"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="PertePaquet/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11" org.eventb.core.prSets="NOEUDS,PAQUETS">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p12">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p13"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p14"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="he with PaquetsPasPerdus∪PaquetsPerdus=Paquets" org.eventb.core.prGoal="p12" org.eventb.core.prHyps="p6">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p15">
+                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p6"/>
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p15" org.eventb.core.prHyps="p11,p9,p5,p1,p2,p10,p7,p3,p4,p8">
+                                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="EnTransit" org.eventb.core.type="ℙ(PAQUETS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="Liens" org.eventb.core.type="ℙ(NOEUDS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="Paquets" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="PaquetsPasPerdus" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="PaquetsPerdus" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="Stock" org.eventb.core.type="ℙ(PAQUETS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="paquet" org.eventb.core.type="PAQUETS"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="PaquetsPasPerdus⊆Paquets"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="paquet∈PaquetsPasPerdus"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="(PaquetsPasPerdus ∖ {paquet})∪PaquetsPerdus∪{paquet}=PaquetsPasPerdus∪PaquetsPerdus"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="Liens∩(id ⦂ ℙ(NOEUDS×NOEUDS))=(∅ ⦂ ℙ(NOEUDS×NOEUDS))"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="PaquetsPasPerdus∪PaquetsPerdus=Paquets"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="EnTransit∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="paquet∈dom(EnTransit)"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(PaquetsPasPerdus ∖ {paquet})∪(PaquetsPerdus∪{paquet})=Paquets"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="finite(NOEUDS)"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="(PaquetsPasPerdus ∖ {paquet})∪PaquetsPerdus∪{paquet}=Paquets"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="PaquetsPerdus⊆Paquets"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="dom(EnTransit)∩dom(Stock)=(∅ ⦂ ℙ(PAQUETS))"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="Paquets⊆PAQUETS"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="finite(PAQUETS)"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="Stock∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="Liens∈ℙ(NOEUDS × NOEUDS)"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.heL1:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="PertePaquet/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11" org.eventb.core.prSets="NOEUDS,PAQUETS">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p12"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p13"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p11,p9,p5,p1,p2,p6,p10,p7,p3,p4,p8">
+                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="EnTransit" org.eventb.core.type="ℙ(PAQUETS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="Liens" org.eventb.core.type="ℙ(NOEUDS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="Paquets" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="PaquetsPasPerdus" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="PaquetsPerdus" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="Stock" org.eventb.core.type="ℙ(PAQUETS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="paquet" org.eventb.core.type="PAQUETS"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="PaquetsPasPerdus⊆Paquets"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="paquet∈PaquetsPasPerdus"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="Liens∩(id ⦂ ℙ(NOEUDS×NOEUDS))=(∅ ⦂ ℙ(NOEUDS×NOEUDS))"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="PaquetsPasPerdus∪PaquetsPerdus=Paquets"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="EnTransit∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="paquet∈dom(EnTransit)"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="finite(NOEUDS)"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="Stock∈PaquetsPasPerdus ∖ {paquet} ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="PaquetsPerdus⊆Paquets"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="dom(EnTransit)∩dom(Stock)=(∅ ⦂ ℙ(PAQUETS))"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="Paquets⊆PAQUETS"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="finite(PAQUETS)"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="Stock∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="Liens∈ℙ(NOEUDS × NOEUDS)"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="PertePaquet/inv8/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11" org.eventb.core.prSets="NOEUDS,PAQUETS">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p12"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p13"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p11,p9,p5,p1,p2,p6,p10,p7,p3,p4,p8">
+                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="EnTransit" org.eventb.core.type="ℙ(PAQUETS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="Liens" org.eventb.core.type="ℙ(NOEUDS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="Paquets" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="PaquetsPasPerdus" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="PaquetsPerdus" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="Stock" org.eventb.core.type="ℙ(PAQUETS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="paquet" org.eventb.core.type="PAQUETS"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="PaquetsPasPerdus⊆Paquets"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="paquet∈PaquetsPasPerdus"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="{paquet} ⩤ EnTransit∈PaquetsPasPerdus ∖ {paquet} ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="Liens∩(id ⦂ ℙ(NOEUDS×NOEUDS))=(∅ ⦂ ℙ(NOEUDS×NOEUDS))"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="PaquetsPasPerdus∪PaquetsPerdus=Paquets"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="EnTransit∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="paquet∈dom(EnTransit)"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="finite(NOEUDS)"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="PaquetsPerdus⊆Paquets"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="dom(EnTransit)∩dom(Stock)=(∅ ⦂ ℙ(PAQUETS))"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="Paquets⊆PAQUETS"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="finite(PAQUETS)"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="Stock∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="Liens∈ℙ(NOEUDS × NOEUDS)"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="PertePaquet/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11" org.eventb.core.prSets="NOEUDS,PAQUETS">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p12">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p12" org.eventb.core.prHyps="p1">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p13">
+                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p13" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p14">
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'">
+                                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p15"/>
+                                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p16"/>
+                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p14" org.eventb.core.prHyps="p11,p9,p5,p1,p2,p6,p10,p7,p3,p4,p8">
+                                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="EnTransit" org.eventb.core.type="ℙ(PAQUETS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="Liens" org.eventb.core.type="ℙ(NOEUDS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="Paquets" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="PaquetsPasPerdus" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="PaquetsPerdus" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="Stock" org.eventb.core.type="ℙ(PAQUETS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="paquet" org.eventb.core.type="PAQUETS"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="PaquetsPasPerdus⊆Paquets"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="paquet∈PaquetsPasPerdus"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="PaquetsPerdus⊆Paquets∧paquet∈Paquets"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="Liens∩(id ⦂ ℙ(NOEUDS×NOEUDS))=(∅ ⦂ ℙ(NOEUDS×NOEUDS))"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="PaquetsPasPerdus∪PaquetsPerdus=Paquets"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="EnTransit∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="paquet∈dom(EnTransit)"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="⊤∧paquet∈Paquets"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="finite(NOEUDS)"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="PaquetsPerdus⊆Paquets"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="dom(EnTransit)∩dom(Stock)=(∅ ⦂ ℙ(PAQUETS))"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="paquet∈Paquets"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="PaquetsPerdus∪{paquet}⊆Paquets"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="Paquets⊆PAQUETS"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="finite(PAQUETS)"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="Stock∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="Liens∈ℙ(NOEUDS × NOEUDS)"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL4"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="CreerLien/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11" org.eventb.core.prSets="NOEUDS,PAQUETS">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p13"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p14"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p15"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p16"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p17"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p10,p8,p4,p1,p2,p5,p9,p7,p3,p12,p13">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="EnTransit" org.eventb.core.type="ℙ(PAQUETS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="Liens" org.eventb.core.type="ℙ(NOEUDS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="Paquets" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="PaquetsPasPerdus" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="PaquetsPerdus" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="Stock" org.eventb.core.type="ℙ(PAQUETS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="noeud1" org.eventb.core.type="NOEUDS"/>
+        <org.eventb.core.prIdent name="noeud2" org.eventb.core.type="NOEUDS"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="PaquetsPasPerdus⊆Paquets"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="Liens∩(id ⦂ ℙ(NOEUDS×NOEUDS))=(∅ ⦂ ℙ(NOEUDS×NOEUDS))"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(Liens∪{noeud1 ↦ noeud2})∩(id ⦂ ℙ(NOEUDS×NOEUDS))=(∅ ⦂ ℙ(NOEUDS×NOEUDS))"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="PaquetsPasPerdus∪PaquetsPerdus=Paquets"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="EnTransit∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="finite(NOEUDS)"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="noeud2∈NOEUDS"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="noeud1≠noeud2"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬noeud1 ↦ noeud2∈Liens"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="PaquetsPerdus⊆Paquets"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="dom(EnTransit)∩dom(Stock)=(∅ ⦂ ℙ(PAQUETS))"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬noeud1=noeud2"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="Paquets⊆PAQUETS"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="{noeud1 ↦ noeud2}⊈Liens"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="finite(PAQUETS)"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="Stock∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="noeud1∈NOEUDS"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="Liens∈ℙ(NOEUDS × NOEUDS)"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DetruireLien/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10" org.eventb.core.prSets="NOEUDS,PAQUETS">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p12">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p13"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p14"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p15"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p16"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p12" org.eventb.core.prHyps="p10,p8,p4,p1,p2,p6,p9,p7,p3,p11">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="EnTransit" org.eventb.core.type="ℙ(PAQUETS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="Liens" org.eventb.core.type="ℙ(NOEUDS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="Paquets" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="PaquetsPasPerdus" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="PaquetsPerdus" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="Stock" org.eventb.core.type="ℙ(PAQUETS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="noeud1" org.eventb.core.type="NOEUDS"/>
+        <org.eventb.core.prIdent name="noeud2" org.eventb.core.type="NOEUDS"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="PaquetsPasPerdus⊆Paquets"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="noeud1 ↦ noeud2∈Liens"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="Liens∩(id ⦂ ℙ(NOEUDS×NOEUDS))=(∅ ⦂ ℙ(NOEUDS×NOEUDS))"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="PaquetsPasPerdus∪PaquetsPerdus=Paquets"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="EnTransit∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="finite(NOEUDS)"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="noeud2∈NOEUDS"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(Liens ∖ {noeud1 ↦ noeud2})∩(id ⦂ ℙ(NOEUDS×NOEUDS))=(∅ ⦂ ℙ(NOEUDS×NOEUDS))"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="Liens∩(id ⦂ ℙ(NOEUDS×NOEUDS))⊆{noeud1 ↦ noeud2}"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="PaquetsPerdus⊆Paquets"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="dom(EnTransit)∩dom(Stock)=(∅ ⦂ ℙ(PAQUETS))"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="{noeud1 ↦ noeud2}⊆Liens"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="Paquets⊆PAQUETS"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="finite(PAQUETS)"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="Stock∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="noeud1∈NOEUDS"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="Liens∈ℙ(NOEUDS × NOEUDS)"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv9/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="NOEUDS,PAQUETS">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="dom(∅ ⦂ ℙ(PAQUETS×NOEUDS))∩dom(∅ ⦂ ℙ(PAQUETS×NOEUDS))=(∅ ⦂ ℙ(PAQUETS))"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="CreerPaquet/inv9/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10" org.eventb.core.prSets="NOEUDS,PAQUETS">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p12"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p13"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p14"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p15"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p10,p8,p5,p1,p2,p6,p9,p7,p3,p11">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="EnTransit" org.eventb.core.type="ℙ(PAQUETS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="Liens" org.eventb.core.type="ℙ(NOEUDS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="Paquets" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="PaquetsPasPerdus" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="PaquetsPerdus" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="Stock" org.eventb.core.type="ℙ(PAQUETS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="noeud" org.eventb.core.type="NOEUDS"/>
+        <org.eventb.core.prIdent name="paquet" org.eventb.core.type="PAQUETS"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="PaquetsPasPerdus⊆Paquets"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="Liens∩(id ⦂ ℙ(NOEUDS×NOEUDS))=(∅ ⦂ ℙ(NOEUDS×NOEUDS))"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="PaquetsPasPerdus∪PaquetsPerdus=Paquets"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="EnTransit∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="finite(NOEUDS)"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="noeud∈NOEUDS"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="dom(EnTransit)∩dom(Stock{paquet ↦ noeud})=(∅ ⦂ ℙ(PAQUETS))"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="PaquetsPerdus⊆Paquets"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="dom(EnTransit)∩dom(Stock)=(∅ ⦂ ℙ(PAQUETS))"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="paquet∉Paquets"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="Paquets⊆PAQUETS"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="finite(PAQUETS)"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="Stock∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬paquet∈Paquets"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="paquet∈PAQUETS"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="Liens∈ℙ(NOEUDS × NOEUDS)"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="EnvoyerPaquet/inv9/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12" org.eventb.core.prSets="NOEUDS,PAQUETS">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p14">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p12" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p13"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p15"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p16"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p17"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p18"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p14" org.eventb.core.prHyps="p10,p8,p5,p1,p2,p6,p9,p7,p3,p4,p11,p13">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="EnTransit" org.eventb.core.type="ℙ(PAQUETS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="Liens" org.eventb.core.type="ℙ(NOEUDS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="Paquets" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="PaquetsPasPerdus" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="PaquetsPerdus" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="Stock" org.eventb.core.type="ℙ(PAQUETS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="noeudEnvoi" org.eventb.core.type="NOEUDS"/>
+        <org.eventb.core.prIdent name="noeudReçoit" org.eventb.core.type="NOEUDS"/>
+        <org.eventb.core.prIdent name="paquet" org.eventb.core.type="PAQUETS"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="PaquetsPasPerdus⊆Paquets"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="paquet∈PaquetsPasPerdus"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="Liens∩(id ⦂ ℙ(NOEUDS×NOEUDS))=(∅ ⦂ ℙ(NOEUDS×NOEUDS))"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="PaquetsPasPerdus∪PaquetsPerdus=Paquets"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="dom(EnTransit{paquet ↦ noeudReçoit})∩dom({paquet} ⩤ Stock)=(∅ ⦂ ℙ(PAQUETS))"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="EnTransit∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="noeudReçoit∈NOEUDS"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="finite(NOEUDS)"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="noeudEnvoi∈NOEUDS"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="noeudEnvoi ↦ noeudReçoit∈Liens"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="{paquet ↦ noeudEnvoi}⊆Stock"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="PaquetsPerdus⊆Paquets"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="dom(EnTransit)∩dom(Stock)=(∅ ⦂ ℙ(PAQUETS))"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="paquet ↦ noeudEnvoi∈Stock"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="Paquets⊆PAQUETS"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="finite(PAQUETS)"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="Stock∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="dom(EnTransit{paquet ↦ noeudReçoit})∩dom(Stock)⊆{paquet}"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="Liens∈ℙ(NOEUDS × NOEUDS)"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="RecevoirPaquet/inv9/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4" org.eventb.core.prSets="NOEUDS,PAQUETS">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p7">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p8"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p9"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p10"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p11"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP" org.eventb.core.prGoal="p7" org.eventb.core.prHyps="p1,p2,p5,p6">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="EnTransit" org.eventb.core.type="ℙ(PAQUETS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="Liens" org.eventb.core.type="ℙ(NOEUDS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="PaquetsPasPerdus" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="Stock" org.eventb.core.type="ℙ(PAQUETS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="noeudEnvoi" org.eventb.core.type="NOEUDS"/>
+        <org.eventb.core.prIdent name="noeudReçoit" org.eventb.core.type="NOEUDS"/>
+        <org.eventb.core.prIdent name="paquet" org.eventb.core.type="PAQUETS"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="dom(EnTransit)∩dom(Stock)=(∅ ⦂ ℙ(PAQUETS))"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="paquet∈PaquetsPasPerdus"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="dom(EnTransit)∩dom(Stock{paquet ↦ noeudReçoit})⊆{paquet}"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="Paquets⊆PAQUETS">
+            <org.eventb.core.prIdent name="Paquets" org.eventb.core.type="ℙ(PAQUETS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="dom({paquet} ⩤ EnTransit)∩dom(Stock{paquet ↦ noeudReçoit})=(∅ ⦂ ℙ(PAQUETS))"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="noeudReçoit∈NOEUDS"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="noeudEnvoi∈NOEUDS"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="noeudEnvoi ↦ noeudReçoit∈Liens"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="Liens∈ℙ(NOEUDS × NOEUDS)"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="{noeudEnvoi ↦ noeudReçoit}⊆Liens"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="paquet ↦ noeudReçoit∈EnTransit"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="{paquet ↦ noeudReçoit}⊆EnTransit"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalPP:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="PertePaquet/inv9/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11" org.eventb.core.prSets="NOEUDS,PAQUETS">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p12">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p13"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p14"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p12" org.eventb.core.prHyps="p11,p9,p5,p1,p2,p6,p10,p7,p3,p4,p8">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="EnTransit" org.eventb.core.type="ℙ(PAQUETS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="Liens" org.eventb.core.type="ℙ(NOEUDS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="Paquets" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="PaquetsPasPerdus" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="PaquetsPerdus" org.eventb.core.type="ℙ(PAQUETS)"/>
+        <org.eventb.core.prIdent name="Stock" org.eventb.core.type="ℙ(PAQUETS×NOEUDS)"/>
+        <org.eventb.core.prIdent name="paquet" org.eventb.core.type="PAQUETS"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="PaquetsPasPerdus⊆Paquets"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="paquet∈PaquetsPasPerdus"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="Liens∩(id ⦂ ℙ(NOEUDS×NOEUDS))=(∅ ⦂ ℙ(NOEUDS×NOEUDS))"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="PaquetsPasPerdus∪PaquetsPerdus=Paquets"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="EnTransit∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="paquet∈dom(EnTransit)"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="dom(EnTransit)∩dom(Stock)⊆{paquet}"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="finite(NOEUDS)"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="PaquetsPerdus⊆Paquets"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="dom(EnTransit)∩dom(Stock)=(∅ ⦂ ℙ(PAQUETS))"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="Paquets⊆PAQUETS"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="dom({paquet} ⩤ EnTransit)∩dom(Stock)=(∅ ⦂ ℙ(PAQUETS))"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="finite(PAQUETS)"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="Stock∈PaquetsPasPerdus ⇸ NOEUDS"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="Liens∈ℙ(NOEUDS × NOEUDS)"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+</org.eventb.core.prFile>
